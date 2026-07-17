@@ -1,5 +1,12 @@
 # @backstage-community/plugin-rbac
 
+## 1.55.2
+
+### Patch Changes
+
+- 2b0b5be: Update German translation for accessible plugins header.
+- 6622075: Updated dependency `@playwright/test` to `1.61.1`.
+
 ## 1.55.1
 
 ### Patch Changes
