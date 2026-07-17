@@ -1,5 +1,13 @@
 # @backstage-community/plugin-tekton
 
+## 3.39.1
+
+### Patch Changes
+
+- 9ec30ec: Migrated the Tekton plugin UI from Material UI v4 (`@material-ui/*`) to MUI v5 (`@mui/*`). Replaced `makeStyles`/`withStyles` usage with `sx` prop styling and added `TektonStylesProvider` with a class name seed to avoid CSS collisions with the host app. No breaking API changes.
+- 6622075: Updated dependency `@playwright/test` to `1.61.1`.
+- 0aa5613: Replaced legacy `@mui/styles` `StylesProvider` with Emotion `CacheProvider` in `TektonStylesProvider` to scope sx/styled class names and avoid CSS collisions with the host app. Removed the `@mui/styles` and unused `@mui/lab` dependencies in favor of `@emotion/cache` and `@emotion/react`. Fixed the pipeline run output dialog layout so expanded output sections scroll inside the dialog instead of overflowing its border. Declared `mobx-react` as a direct dependency for pipeline topology components. No breaking API changes.
+
 ## 3.39.0
 
 ### Minor Changes
